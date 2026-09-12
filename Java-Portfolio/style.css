@@ -1,0 +1,247 @@
+/* ================================
+   CONTACT BUTTON FINAL FIX
+================================ */
+
+.contact-buttons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+    flex-wrap: wrap !important;
+}
+
+.contact-btn {
+    position: relative !important;
+    overflow: hidden !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-width: 150px !important;
+    padding: 14px 23px !important;
+
+    border-radius: 10px !important;
+    text-decoration: none !important;
+
+    font-weight: 600 !important;
+    font-size: 14px !important;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease,
+        border-color 0.35s ease,
+        color 0.35s ease !important;
+}
+
+/* SHINE EFFECT */
+
+.contact-btn::before {
+    content: "" !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    left: -120% !important;
+
+    width: 70% !important;
+    height: 100% !important;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.5),
+        transparent
+    ) !important;
+
+    transform: skewX(-25deg) !important;
+
+    transition: left 0.6s ease !important;
+
+    pointer-events: none !important;
+}
+
+.contact-btn:hover::before {
+    left: 140% !important;
+}
+
+/* LIFT */
+
+.contact-btn:hover {
+    transform: translateY(-6px) scale(1.04) !important;
+}
+
+/* ICON */
+
+.contact-btn span:first-child {
+    display: inline-block !important;
+    transition: transform 0.35s ease !important;
+}
+
+.contact-btn:hover span:first-child {
+    transform: scale(1.3) rotate(-10deg) !important;
+}
+
+/* CLICK */
+
+.contact-btn:active {
+    transform: translateY(-1px) scale(0.96) !important;
+}
+
+
+/* ================================
+   CALL
+================================ */
+
+.call-btn {
+    background: linear-gradient(
+        135deg,
+        #00d9ff,
+        #087f9c
+    ) !important;
+
+    border: 1px solid #00d9ff !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 8px 25px rgba(0,217,255,0.25) !important;
+}
+
+.call-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #00efff,
+        #0097b2
+    ) !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,217,255,0.5),
+        0 0 35px rgba(0,217,255,0.35) !important;
+}
+
+
+/* ================================
+   EMAIL
+================================ */
+
+.email-btn {
+    background: rgba(234,67,53,0.08) !important;
+
+    border: 1px solid #ea4335 !important;
+
+    color: #ff6b5f !important;
+
+    box-shadow:
+        0 8px 25px rgba(234,67,53,0.15) !important;
+}
+
+.email-btn:hover {
+    background: rgba(234,67,53,0.18) !important;
+
+    color: #ff9b92 !important;
+
+    border-color: #ff3b30 !important;
+
+    box-shadow:
+        0 15px 40px rgba(234,67,53,0.5),
+        0 0 35px rgba(234,67,53,0.35) !important;
+}
+
+
+/* ================================
+   WHATSAPP
+================================ */
+
+.whatsapp-btn {
+    background: rgba(37,211,102,0.08) !important;
+
+    border: 1px solid #25d366 !important;
+
+    color: #25d366 !important;
+
+    box-shadow:
+        0 8px 25px rgba(37,211,102,0.15) !important;
+}
+
+.whatsapp-btn:hover {
+    background: rgba(37,211,102,0.18) !important;
+
+    color: #6dffa0 !important;
+
+    border-color: #25d366 !important;
+
+    box-shadow:
+        0 15px 40px rgba(37,211,102,0.5),
+        0 0 35px rgba(37,211,102,0.35) !important;
+}
+
+
+/* ================================
+   CONTINUOUS GLOW
+================================ */
+
+.call-btn {
+    animation: callGlow 3s ease-in-out infinite !important;
+}
+
+.email-btn {
+    animation: emailGlow 3s ease-in-out infinite !important;
+}
+
+.whatsapp-btn {
+    animation: whatsappGlow 3s ease-in-out infinite !important;
+}
+
+@keyframes callGlow {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(0,217,255,0.20);
+    }
+
+    50% {
+        box-shadow:
+            0 10px 35px rgba(0,217,255,0.45),
+            0 0 25px rgba(0,217,255,0.25);
+    }
+}
+
+@keyframes emailGlow {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(234,67,53,0.15);
+    }
+
+    50% {
+        box-shadow:
+            0 10px 35px rgba(234,67,53,0.40),
+            0 0 25px rgba(234,67,53,0.25);
+    }
+}
+
+@keyframes whatsappGlow {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(37,211,102,0.15);
+    }
+
+    50% {
+        box-shadow:
+            0 10px 35px rgba(37,211,102,0.40),
+            0 0 25px rgba(37,211,102,0.25);
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .contact-buttons {
+        flex-direction: column !important;
+    }
+
+    .contact-btn {
+        width: 100% !important;
+        max-width: 280px !important;
+    }
+}

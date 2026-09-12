@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sumanta Kumar Patra | Logistics & Operations Professional</title>
+
+<meta name="description"
+content="Professional portfolio of Sumanta Kumar Patra — Logistics, Purchase, Accounts, Coal Dispatch and Port Operations Professional.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(0, 188, 212, 0.08), transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(255, 193, 7, 0.06), transparent 30%),
+        #06111c;
+    color: #eef7ff;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1180px, 92%);
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    color: #00d9ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section-title h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(32px, 5vw, 52px);
+    margin-top: 10px;
+}
+
+.section-title p {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #9fb4c5;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   3D BACKGROUND
+========================================================= */
+
+#scene {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            180deg,
+            #03101c 0%,
+            #061a2b 48%,
+            #04131f 100%
+        );
+}
+
+.grid {
+    position: absolute;
+    inset: auto -20% -35%;
+    height: 65%;
+    background-image:
+        linear-gradient(rgba(0, 217, 255, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 217, 255, 0.12) 1px, transparent 1px);
+    background-size: 70px 70px;
+    transform: perspective(500px) rotateX(65deg);
+    opacity: .35;
+}
+
+.light {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: .14;
+}
+
+.light.one {
+    background: #00d9ff;
+    top: -180px;
+    left: -150px;
+}
+
+.light.two {
+    background: #f6b800;
+    right: -200px;
+    bottom: 10%;
+}
+
+.wave {
+    position: absolute;
+    width: 140%;
+    height: 300px;
+    left: -20%;
+    bottom: 0;
+    border-radius: 50%;
+    border-top: 1px solid rgba(0, 217, 255, .2);
+    transform: rotate(-3deg);
+}
+
+/* =========================================================
+   FLOATING CONTAINERS
+========================================================= */
+
+.floating-container {
+    position: fixed;
+    width: 75px;
+    height: 35px;
+    border: 2px solid rgba(0, 217, 255, .2);
+    background: rgba(0, 120, 160, .06);
+    box-shadow: inset 0 0 20px rgba(0, 217, 255, .05);
+    z-index: -3;
+    animation: floatBox 12s infinite ease-in-out;
+}
+
+.floating-container::before,
+.floating-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(0, 217, 255, .2);
+}
+
+.floating-container::before {
+    left: 25%;
+}
+
+.floating-container::after {
+    left: 50%;
+}
+
+.fc1 {
+    left: 8%;
+    top: 25%;
+    animation-delay: 0s;
+}
+
+.fc2 {
+    right: 7%;
+    top: 45%;
+    animation-delay: 3s;
+    transform: rotate(8deg);
+}
+
+.fc3 {
+    left: 15%;
+    bottom: 20%;
+    animation-delay: 5s;
+}
+
+@keyframes floatBox {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate3d(30px, -35px, 50px) rotate(7deg);
+    }
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(18px);
+    background: rgba(3, 15, 26, .72);
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00d9ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #b8cbd8;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #00d9ff;
+}
+
+.menu {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    perspective: 1200px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 15px;
+    border: 1px solid rgba(0,217,255,.25);
+    border-radius: 50px;
+    color: #7deeff;
+    background: rgba(0,217,255,.06);
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #27e889;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #27e889;
+}
+
+.hero h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    color: #00d9ff;
+}
+
+.hero-subtitle {
+    margin-top: 22px;
+    font-size: 21px;
+    color: #c6d7e2;
+    line-height: 1.5;
+}
+
+.hero-description {
+    max-width: 680px;
+    margin-top: 20px;
+    color: #91a8b8;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 23px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: #00bcd4;
+    color: #00121b;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,188,212,.25);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255,255,255,.15);
+    color: #d7e8f2;
+    background: rgba(255,255,255,.03);
+}
+
+.btn-outline:hover {
+    border-color: #00d9ff;
+    color: #00d9ff;
+}
+
+/* =========================================================
+   PROFILE CARD
+========================================================= */
+
+.profile-card {
+    position: relative;
+    padding: 38px 30px;
+    border-radius: 24px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.09),
+            rgba(255,255,255,.025)
+        );
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(25px);
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.08);
+    transform-style: preserve-3d;
+    transition: transform .2s ease;
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(0,217,255,.25),
+        transparent
+    );
+    opacity: .5;
+    z-index: -1;
+}
+
+.profile-photo {
+    width: 155px;
+    height: 155px;
+    margin: auto auto 25px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(
+        135deg,
+        #00d9ff,
+        #0c7890,
+        #f6b800
+    );
+    box-shadow:
+        0 0 0 8px rgba(0,217,255,.05),
+        0 20px 50px rgba(0,0,0,.4);
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #071521;
+    display: block;
+}
+
+.profile-card h3 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+}
+
+.role {
+    text-align: center;
+    color: #00d9ff;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-meta {
+    margin-top: 25px;
+    display: grid;
+    gap: 13px;
+}
+
+.profile-meta div {
+    color: #a8bbc8;
+    padding: 12px;
+    background: rgba(255,255,255,.025);
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.profile-meta strong {
+    color: #e6f4fb;
+}
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats {
+    padding-top: 30px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+}
+
+.stat {
+    padding: 28px 20px;
+    text-align: center;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-number {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    color: #00d9ff;
+}
+
+.stat-label {
+    color: #91a7b6;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-card {
+    padding: 35px;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+}
+
+.about-card h3 {
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.about-card p {
+    color: #9db2c0;
+    line-height: 1.9;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.skill {
+    padding: 9px 13px;
+    border-radius: 7px;
+    background: rgba(0,217,255,.06);
+    border: 1px solid rgba(0,217,255,.15);
+    color: #8beeff;
+    font-size: 12px;
+}
+
+/* =========================================================
+   LOGISTICS VISUAL
+========================================================= */
+
+.logistics-visual {
+    min-height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    background:
+        linear-gradient(
+            180deg,
+            #082338 0%,
+            #062030 55%,
+            #03131e 56%
+        );
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.sun {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    right: 60px;
+    top: 50px;
+    background: rgba(246,184,0,.15);
+    box-shadow: 0 0 70px rgba(246,184,0,.18);
+}
+
+.water {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 45%;
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(0,217,255,.04) 0px,
+            rgba(0,217,255,.04) 2px,
+            transparent 2px,
+            transparent 15px
+        );
+}
+
+.ship {
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 50px;
+    background: #172a37;
+    border-radius: 0 0 25px 30px;
+    border-bottom: 5px solid #00a6bd;
+    animation: shipMove 6s ease-in-out infinite;
+}
+
+.ship::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 55px;
+    background: #243d4c;
+    right: 25px;
+    bottom: 40px;
+    clip-path: polygon(0 100%, 20% 0, 100% 0, 100% 100%);
+}
+
+.ship::after {
+    content: "▦ ▦ ▦ ▦ ▦";
+    position: absolute;
+    color: #f6b800;
+    letter-spacing: 5px;
+    left: 25px;
+    top: -30px;
+    font-size: 25px;
+}
+
+@keyframes shipMove {
+    0%,100% {
+        margin-left: -20px;
+    }
+
+    50% {
+        margin-left: 20px;
+    }
+}
+
+.route {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 45px;
+    height: 2px;
+    background: rgba(0,217,255,.25);
+}
+
+.route::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00d9ff;
+    box-shadow: 0 0 15px #00d9ff;
+    top: -3px;
+    animation: routeMove 5s linear infinite;
+}
+
+@keyframes routeMove {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(
+        #00d9ff,
+        rgba(0,217,255,.05)
+    );
+}
+
+.item {
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 45px;
+}
+
+.dot {
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00d9ff;
+    border: 3px solid #06111c;
+    box-shadow: 0 0 0 2px #00d9ff;
+}
+
+.date {
+    color: #f6b800;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.item h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+}
+
+.item h4 {
+    color: #00d9ff;
+    font-size: 14px;
+    margin-top: 7px;
+    font-weight: 500;
+}
+
+.item p,
+.item li {
+    color: #9db1bf;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.item p {
+    margin-top: 15px;
+}
+
+.item ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.item li {
+    margin-bottom: 8px;
+}
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.service {
+    padding: 30px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(255,255,255,.08);
+    transition: .35s;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0,217,255,.3);
+    box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: rgba(0,217,255,.08);
+    color: #00d9ff;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin-bottom: 12px;
+}
+
+.service p {
+    color: #94aab8;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 55px;
+    text-align: center;
+    border-radius: 25px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,217,255,.08),
+            rgba(255,255,255,.025)
+        );
+    border: 1px solid rgba(0,217,255,.15);
+}
+
+.contact-box h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+}
+
+.contact-box p {
+    color: #9eb2c0;
+    margin: 15px auto 30px;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   CONTACT BUTTONS (merged in — this was the missing piece)
+========================================================= */
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    position: relative;
+    overflow: hidden;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-width: 150px;
+    padding: 14px 23px;
+
+    border-radius: 10px;
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease,
+        border-color 0.35s ease,
+        color 0.35s ease;
+}
+
+/* SHINE EFFECT */
+
+.contact-btn::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.5),
+        transparent
+    );
+
+    transform: skewX(-25deg);
+
+    transition: left 0.6s ease;
+
+    pointer-events: none;
+}
+
+.contact-btn:hover::before {
+    left: 140%;
+}
+
+/* LIFT */
+
+.contact-btn:hover {
+    transform: translateY(-6px) scale(1.04);
+}
+
+/* ICON */
+
+.contact-btn span:first-child {
+    display: inline-block;
+    transition: transform 0.35s ease;
+}
+
+.contact-btn:hover span:first-child {
+    transform: scale(1.3) rotate(-10deg);
+}
+
+/* CLICK */
+
+.contact-btn:active {
+    transform: translateY(-1px) scale(0.96);
+}
+
+/* CALL */
+
+.call-btn {
+    background: linear-gradient(
+        135deg,
+        #00d9ff,
+        #087f9c
+    );
+
+    border: 1px solid #00d9ff;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(0,217,255,0.25);
+
+    animation: callGlow 3s ease-in-out infinite;
+}
+
+.call-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #00efff,
+        #0097b2
+    );
+
+    box-shadow:
+        0 15px 40px rgba(0,217,255,0.5),
+        0 0 35px rgba(0,217,255,0.35);
+}
+
+/* EMAIL */
+
+.email-btn {
+    background: rgba(234,67,53,0.08);
+
+    border: 1px solid #ea4335;
+
+    color: #ff6b5f;
+
+    box-shadow:
+        0 8px 25px rgba(234,67,53,0.15);
+
+    animation: emailGlow 3s ease-in-out infinite;
+}
+
+.email-btn:hover {
+    background: rgba(234,67,53,0.18);
+
+    color: #ff9b92;
+
+    border-color: #ff3b30;
+
+    box-shadow:
+        0 15px 40px rgba(234,67,53,0.5),
+        0 0 35px rgba(234,67,53,0.35);
+}
+
+/* WHATSAPP */
+
+.whatsapp-btn {
+    background: rgba(37,211,102,0.08);
+
+    border: 1px solid #25d366;
+
+    color: #25d366;
+
+    box-shadow:
+        0 8px 25px rgba(37,211,102,0.15);
+
+    animation: whatsappGlow 3s ease-in-out infinite;
+}
+
+.whatsapp-btn:hover {
+    background: rgba(37,211,102,0.18);
+
+    color: #6dffa0;
+
+    border-color: #25d366;
+
+    box-shadow:
+        0 15px 40px rgba(37,211,102,0.5),
+        0 0 35px rgba(37,211,102,0.35);
+}
+
+/* GLOW KEYFRAMES */
+
+@keyframes callGlow {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(0,217,255,0.20);
+    }
+
+    50% {
+        box-shadow:
+            0 10px 35px rgba(0,217,255,0.45),
+            0 0 25px rgba(0,217,255,0.25);
+    }
+}
+
+@keyframes emailGlow {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(234,67,53,0.15);
+    }
+
+    50% {
+        box-shadow:
+            0 10px 35px rgba(234,67,53,0.40),
+            0 0 25px rgba(234,67,53,0.25);
+    }
+}
+
+@keyframes whatsappGlow {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(37,211,102,0.15);
+    }
+
+    50% {
+        box-shadow:
+            0 10px 35px rgba(37,211,102,0.40),
+            0 0 25px rgba(37,211,102,0.25);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    border-top: 1px solid rgba(255,255,255,.06);
+    padding: 30px 0;
+    color: #718896;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer span {
+    color: #00d9ff;
+}
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(45px) rotateX(8deg);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .profile-card {
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        padding: 25px;
+        background: rgba(3,15,26,.96);
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 75px 0;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        letter-spacing: -2px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .stats-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        padding: 35px 20px;
+    }
+
+    .contact-box h2 {
+        font-size: 28px;
+    }
+
+    .profile-card {
+        padding: 30px 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     3D BACKGROUND
+===================================================== -->
+
+<div id="scene">
+
+    <div class="light one"></div>
+    <div class="light two"></div>
+
+    <div class="grid"></div>
+
+    <div class="wave"></div>
+
+    <div class="floating-container fc1"></div>
+    <div class="floating-container fc2"></div>
+    <div class="floating-container fc3"></div>
+
+</div>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header>
+
+<nav class="navbar container">
+
+    <a href="#home" class="logo">
+        <span>SKP</span> • LOGISTICS
+    </a>
+
+    <div class="menu" id="menu">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="#home">Home</a>
+        </li>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+            <a href="#expertise">Expertise</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+    <div class="hero-content reveal">
+
+        <div class="badge">
+            <span class="status-dot"></span>
+            Logistics & Operations Professional
+        </div>
+
+        <h1>
+            Sumanta Kumar
+            <span>Patra</span>
+        </h1>
+
+        <div class="hero-subtitle">
+            Office-in-Charge • Purchase & Accounts
+        </div>
+
+        <p class="hero-description">
+            Experienced professional with 14 years of expertise
+            across logistics chain management, purchase, accounts,
+            coal dispatch, port operations, vessel coordination,
+            cargo documentation and branch management.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#experience" class="btn btn-primary">
+                Explore Experience →
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROFILE CARD -->
+
+    <aside class="profile-card reveal" id="profileCard">
+
+        <div class="profile-photo">
+
+            <!--
+            PROFILE PHOTO
+            Replace the URL below with your own photo URL.
+
+            Example:
+            https://yourwebsite.com/profile.jpg
+
+            OR local image:
+            images/profile.jpg
+            -->
+
+            <img
+                src="images/profile.jpg"
+                alt="Sumanta Kumar Patra Profile Photo"
+            >
+
+        </div>
+
+        <div class="monogram"
+             style="text-align:center;color:#00d9ff;font-weight:800;margin-bottom:8px;">
+            SKP
+        </div>
+
+        <h3>
+            Sumanta Kumar Patra
+        </h3>
+
+        <div class="role">
+            Office-in-Charge • Purchase &amp; A/C’s
+        </div>
+
+        <div class="profile-meta">
+
+            <div>
+                <strong>Education:</strong>
+                B.A. (Hons.) English
+            </div>
+
+            <div>
+                <strong>Diploma:</strong>
+                Computer Application
+            </div>
+
+            <div>
+                <strong>Location:</strong>
+                Kolkata / Odisha
+            </div>
+
+            <div>
+                <strong>Experience:</strong>
+                14 Years in Logistic Chain Management
+            </div>
+
+        </div>
+
+    </aside>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="stats">
+
+<div class="container">
+
+    <div class="stats-grid reveal">
+
+        <div class="stat">
+            <div class="stat-number" data-target="14">0</div>
+            <div class="stat-label">
+                Years Experience
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">
+                Major Career Roles
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number" data-target="4">0</div>
+            <div class="stat-label">
+                Major Ports
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label">
+                Core Functions
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about">
+
+<div class="container">
+
+    <div class="section-title reveal">
+
+        <span>Professional Profile</span>
+
+        <h2>About Me</h2>
+
+        <p>
+            A career built around coordination, logistics,
+            procurement, documentation and operational management.
+        </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="logistics-visual reveal">
+
+            <div class="sun"></div>
+
+            <div class="water"></div>
+
+            <div class="ship"></div>
+
+            <div class="route"></div>
+
+        </div>
+
+
+        <div class="about-card reveal">
+
+            <h3>
+                Logistics • Purchase • Accounts
+            </h3>
+
+            <p>
+                I have developed extensive practical experience
+                in logistics chain management, purchase and accounts
+                operations, coal dispatch, port coordination,
+                vessel movement monitoring, cargo documentation
+                and branch-level management.
+            </p>
+
+            <p style="margin-top:15px;">
+                My professional background includes experience with
+                construction, cement, coal trading and transportation
+                related operations across different locations in India.
+            </p>
+
+
+            <div class="skills">
+
+                <div class="skill">
+                    Logistics Management
+                </div>
+
+                <div class="skill">
+                    Purchase
+                </div>
+
+                <div class="skill">
+                    Accounts
+                </div>
+
+                <div class="skill">
+                    Coal Operations
+                </div>
+
+                <div class="skill">
+                    Port Operations
+                </div>
+
+                <div class="skill">
+                    Vessel Coordination
+                </div>
+
+                <div class="skill">
+                    Cargo Documentation
+                </div>
+
+                <div class="skill">
+                    Branch Management
+                </div>
+
+                <div class="skill">
+                    Dispatch Management
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section id="experience">
+
+<div class="container">
+
+    <div class="section-title reveal">
+
+        <span>Career Journey</span>
+
+        <h2>Professional Experience</h2>
+
+        <p>
+            A timeline of professional experience across
+            purchase, accounts, logistics, coal and port operations.
+        </p>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <!-- EXPERIENCE 1 -->
+
+        <article class="item reveal">
+
+            <span class="dot"></span>
+
+            <div class="date">
+                January 2012 – Present
+            </div>
+
+            <h3>
+                Office-In-Charge — Purchase &amp; A/C’s
+            </h3>
+
+            <h4>
+                M/S Sreeram Builders, Kolkata
+            </h4>
+
+            <p>
+                Responsible for office-in-charge functions in
+                Purchase & Accounts. Authorized by M/s Ambuja Reality
+                Development Limited, Ecospace, Kolkata.
+            </p>
+
+        </article>
+
+
+        <!-- EXPERIENCE 2 -->
+
+        <article class="item reveal">
+
+            <span class="dot"></span>
+
+            <div class="date">
+                1 January 2000 – 31 December 2011
+            </div>
+
+            <h3>
+                Sr. QC &amp; QT / Marketing Head — Coal Department
+            </h3>
+
+            <h4>
+                M/S Shree Cement Ltd., Bangur Nagar, Beawar,
+                Rajasthan • Site: Jamnagar
+            </h4>
+
+            <ul>
+
+                <li>
+                    Managed dispatch movement of Pet. Coke and
+                    H.S.D. from Reliance Industries to plant
+                    locations by rail and road.
+                </li>
+
+                <li>
+                    Handled imported coal operations at Kandla,
+                    Pipava, Navalakhi and Magdalla Ports.
+                </li>
+
+                <li>
+                    Provided vessel movement and position updates
+                    before and during arrival and departure.
+                </li>
+
+                <li>
+                    Supported safe and effective work practices
+                    and organized port services required for
+                    vessel operations.
+                </li>
+
+                <li>
+                    Prepared cargo documentation, government forms
+                    and operational reports.
+                </li>
+
+                <li>
+                    Closed vessel files according to company
+                    guidelines and work instructions.
+                </li>
+
+            </ul>
+
+        </article>
+
+
+        <!-- EXPERIENCE 3 -->
+
+        <article class="item reveal">
+
+            <span class="dot"></span>
+
+            <div class="date">
+                Earlier Career • 5 Years
+            </div>
+
+            <h3>
+                Branch In-Charge — Ahmedabad
+            </h3>
+
+            <h4>
+                M/S Vikram Coal Carriers Pvt. Ltd., Kolkata
+            </h4>
+
+            <p>
+                Branch-in-charge experience in Ahmedabad for a
+                trader and transporter associated with M/S Birla
+                Cement Works.
+            </p>
+
+        </article>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERTISE
+===================================================== -->
+
+<section id="expertise">
+
+<div class="container">
+
+    <div class="section-title reveal">
+
+        <span>Core Capabilities</span>
+
+        <h2>Professional Expertise</h2>
+
+        <p>
+            Key areas developed through years of practical
+            operational experience.
+        </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <div class="service reveal">
+
+            <div class="service-icon">
+                ⚓
+            </div>
+
+            <h3>
+                Port Operations
+            </h3>
+
+            <p>
+                Experience coordinating imported coal operations,
+                vessel movements, port services and cargo-related
+                documentation.
+            </p>
+
+        </div>
+
+
+        <div class="service reveal">
+
+            <div class="service-icon">
+                🚚
+            </div>
+
+            <h3>
+                Logistics & Dispatch
+            </h3>
+
+            <p>
+                Coordination of Pet. Coke and H.S.D. dispatch
+                movement through road and rail transportation.
+            </p>
+
+        </div>
+
+
+        <div class="service reveal">
+
+            <div class="service-icon">
+                📦
+            </div>
+
+            <h3>
+                Cargo Management
+            </h3>
+
+            <p>
+                Handling operational documentation, cargo records,
+                government forms and vessel files.
+            </p>
+
+        </div>
+
+
+        <div class="service reveal">
+
+            <div class="service-icon">
+                🧾
+            </div>
+
+            <h3>
+                Purchase & Accounts
+            </h3>
+
+            <p>
+                Office-in-charge responsibilities covering
+                purchase and accounts functions.
+            </p>
+
+        </div>
+
+
+        <div class="service reveal">
+
+            <div class="service-icon">
+                🏢
+            </div>
+
+            <h3>
+                Branch Management
+            </h3>
+
+            <p>
+                Branch-level operational responsibility including
+                coordination with traders, transporters and clients.
+            </p>
+
+        </div>
+
+
+        <div class="service reveal">
+
+            <div class="service-icon">
+                📊
+            </div>
+
+            <h3>
+                Reporting & Documentation
+            </h3>
+
+            <p>
+                Preparation of operational reports, government
+                documentation and completion of vessel files.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+
+<section id="contact">
+
+<div class="container">
+
+    <div class="contact-box reveal">
+
+        <h2>
+            Let's Connect
+        </h2>
+
+        <p>
+            For professional opportunities, business coordination
+            or logistics-related discussions, feel free to get in touch.
+        </p>
+
+        <!-- CHANGE PHONE NUMBER BELOW (both tel: and wa.me links) -->
+        <div class="contact-buttons">
+
+            <a
+                href="tel:+918820111476/8617775415"
+                class="contact-btn call-btn"
+            >
+                <span>📞</span>
+                <span>Call Me</span>
+            </a>
+
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=sreerambuilders451@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-btn email-btn"
+            >
+                <span>✉️</span>
+                <span>Email Me</span>
+            </a>
+
+            <a
+                href="https://wa.me/918820111476"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-btn whatsapp-btn"
+            >
+                <span>💬</span>
+                <span>WhatsApp</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container">
+
+    © <span id="year"></span>
+    Sumanta Kumar Patra.
+    All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const menu = document.getElementById("menu");
+const navLinks = document.getElementById("navLinks");
+
+menu.addEventListener("click", () => {
+
+    navLinks.classList.toggle("show");
+
+});
+
+
+/* Close menu after clicking */
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("show");
+
+    });
+
+});
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const revealElements =
+document.querySelectorAll(".reveal");
+
+const revealObserver =
+new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("active");
+
+                revealObserver.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.12
+    }
+
+);
+
+revealElements.forEach(element => {
+
+    revealObserver.observe(element);
+
+});
+
+
+/* =========================================================
+   COUNTER ANIMATION
+========================================================= */
+
+const counters =
+document.querySelectorAll(".stat-number");
+
+let countersStarted = false;
+
+function startCounters() {
+
+    if (countersStarted) return;
+
+    countersStarted = true;
+
+    counters.forEach(counter => {
+
+        const target =
+        Number(counter.dataset.target);
+
+        let current = 0;
+
+        const duration = 1400;
+
+        const startTime = performance.now();
+
+        function update(time) {
+
+            const progress =
+            Math.min(
+                (time - startTime) / duration,
+                1
+            );
+
+            current =
+            Math.floor(
+                progress * target
+            );
+
+            counter.textContent = current + "+";
+
+            if (progress < 1) {
+
+                requestAnimationFrame(update);
+
+            } else {
+
+                counter.textContent = target + "+";
+
+            }
+
+        }
+
+        requestAnimationFrame(update);
+
+    });
+
+}
+
+
+/* Counter observer */
+
+const statsSection =
+document.querySelector(".stats");
+
+const statsObserver =
+new IntersectionObserver(
+
+    entries => {
+
+        if (entries[0].isIntersecting) {
+
+            startCounters();
+
+            statsObserver.disconnect();
+
+        }
+
+    },
+
+    {
+        threshold: .4
+    }
+
+);
+
+statsObserver.observe(statsSection);
+
+
+/* =========================================================
+   MOUSE 3D PROFILE PARALLAX
+========================================================= */
+
+const profileCard =
+document.getElementById("profileCard");
+
+document.addEventListener("mousemove", event => {
+
+    if (window.innerWidth < 900) return;
+
+    const x =
+    (window.innerWidth / 2 - event.clientX) / 35;
+
+    const y =
+    (window.innerHeight / 2 - event.clientY) / 35;
+
+    profileCard.style.transform =
+    `rotateY(${x}deg) rotateX(${-y}deg)`;
+
+});
+
+
+profileCard.addEventListener("mouseleave", () => {
+
+    profileCard.style.transform =
+    "rotateY(0deg) rotateX(0deg)";
+
+});
+
+
+/* =========================================================
+   SUBTLE PARALLAX BACKGROUND
+========================================================= */
+
+document.addEventListener("mousemove", event => {
+
+    const x =
+    (event.clientX / window.innerWidth - .5);
+
+    const y =
+    (event.clientY / window.innerHeight - .5);
+
+    document.querySelector(".grid").style.transform =
+    `perspective(500px)
+     rotateX(65deg)
+     translate(${x * 15}px, ${y * 10}px)`;
+
+});
+
+
+/* =========================================================
+   CURRENT YEAR
+========================================================= */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+const sections =
+document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop =
+        section.offsetTop - 120;
+
+        if (window.scrollY >= sectionTop) {
+
+            current = section.getAttribute("id");
+
+        }
+
+    });
+
+    document.querySelectorAll(".nav-links a")
+    .forEach(link => {
+
+        link.style.color = "";
+
+        if (
+            link.getAttribute("href") === "#" + current
+        ) {
+
+            link.style.color = "#00d9ff";
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
